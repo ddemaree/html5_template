@@ -1,0 +1,58 @@
+// all
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// top left only
+@mixin border-radius-top-left($radius) {
+  border-top-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -webkit-border-top-left-radius: $radius;
+}
+
+// top right only
+@mixin border-radius-top-right($radius) {
+  border-top-right-radius: $radius;
+  -moz-border-radius-topright: $radius;
+  -webkit-border-top-right-radius: $radius;
+}
+
+// bottom right only
+@mixin border-radius-bottom-right($radius) {
+  border-bottom-right-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+}
+
+// bottom left only
+@mixin border-radius-bottom-left($radius) {
+  border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+}
+
+// top (left and right) only
+@mixin border-radius-top($radius) {
+  @include border-radius-top-left($radius);
+  @include border-radius-top-right($radius);
+}
+
+// right (top and bottom) only
+@mixin border-radius-right($radius) {
+  @include border-radius-top-right($radius);
+  @include border-radius-bottom-right($radius);
+}
+
+// bottom (left and right) only
+@mixin border-radius-bottom($radius) {
+  @include border-radius-bottom-right($radius);
+  @include border-radius-bottom-left($radius);
+}
+
+// left (top and bottom) only
+@mixin border-radius-left($radius) {
+  @include border-radius-top-left($radius);
+  @include border-radius-bottom-left($radius);
+}

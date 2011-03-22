@@ -1,0 +1,38 @@
+@mixin box-shadow($h-offset, $v-offset, $blur-radius, $color) {
+  -moz-box-shadow: $h-offset $v-offset $blur-radius $color;
+  -webkit-box-shadow: $h-offset $v-offset $blur-radius $color;
+  box-shadow: $h-offset $v-offset $blur-radius $color;
+}
+
+@mixin inline-block {
+  -moz-box-orient: vertical; /* For Firefox < 3 */
+  display: inline-block;
+  display: -moz-inline-box; /* For Firefox < 3 */
+  vertical-align: middle;
+
+  * html & {
+    display: inline; /* For IE < 8 */
+  }
+}
+
+@mixin inset-box-shadow($h-offset, $v-offset, $blur-radius, $color) {
+  -moz-box-shadow: inset $h-offset $v-offset $blur-radius $color;
+  -webkit-box-shadow: inset $h-offset $v-offset $blur-radius $color;
+  box-shadow: inset $h-offset $v-offset $blur-radius $color;
+}
+
+@mixin clearfix {
+  zoom: 1;
+
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+@mixin sans-serif {
+  font-family: proxima-nova-1, arial, sans-serif;
+}

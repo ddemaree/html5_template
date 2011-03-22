@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    rake (0.8.7)
+    sass (3.1.0.alpha.249)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake
+  sass (= 3.1.0.alpha.249)
