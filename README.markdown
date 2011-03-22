@@ -1,4 +1,4 @@
-## David's HTML5 Template ##
+# David's HTML5 Template #
 
 This is a skeleton HTML5 project based on [HTML5 Boilerplate][h5bp] and [Initializr][init] that I use to get new sites started off right.
 
@@ -13,6 +13,15 @@ This differs from the Initializr base project in a couple of ways:
 * For Ruby fans, a [Gemfile][bund] (including Rake and Sass 3.1) is included. The Rakefile doesn't do anything just yet, but it will.
 
 * [jQuery][jqry] has been updated to 1.5.1, and [Modernizr][mdzr] has been updated to 1.7.
+
+## Coming Soon ##
+
+* Sass functions for calculating heights/widths based on a grid, like so:
+
+        .my-selector {
+            line-height: gridLines(2);   //  2 * 18px = 36px
+            width:       gridColumns(5); // (5 * 40px) + ((5 - 1) * 20px) = 280px
+        }
 
 [h5bp]:http://html5boilerplate.com/
 [init]:http://initializr.com/
